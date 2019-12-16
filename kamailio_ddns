@@ -1,7 +1,9 @@
-//rtpproxy 支持动态域名转发
+//rtpproxy 域名转发
 #rtpproxy -A haitianyise.f3322.net -F -l 192.168.16.240 -m 20000 -M 30000 -s udp:* 7722 -d INFO
 
 
 
-//kamailio 动态域名发布
+//kamailio 域名支持（动态域名有可能造成特定时间内通话故障，慎用）
   listen=udp:192.168.16.240:5060 advertise haitianyise.f3322.net:5060
+
+
